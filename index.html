@@ -16,18 +16,11 @@
     }
     #container{
       height: 100%;
+      flex-direction: row;
     }
     .layout-center-center{
-      display: -ms-flexbox;
-      display: -webkit-flex;
       display: flex;
-
-      -ms-flex-align: center;
-      -webkit-align-items: center;
       align-items: center;
-
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
       justify-content: center;
     }
     .principle{
@@ -44,6 +37,12 @@
       height: 100%;
       color: #222;
       text-decoration: none;
+    }
+
+    @media (max-width:600px) {
+      #container{
+        flex-direction: column;
+      }
     }
   </style>
   <body>
